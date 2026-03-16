@@ -1,1 +1,1 @@
-# CSF303-competitive-programming
+# CSF303
