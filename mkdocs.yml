@@ -1,0 +1,111 @@
+site_name: CSF303- Competitive Programming
+
+use_directory_urls: false
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.copy
+    - content.tooltips
+    - content.footnote.tooltips
+
+  language: en
+  palette:
+    - scheme: default
+      primary: black
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      accent: blue
+      primary: blue grey
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+  font:
+    text: Roboto
+    code: Source Code Pro
+  icon:
+    logo: material/code-json
+
+extra_css:
+  - stylesheets/color.css
+  - https://unpkg.com/katex@0/dist/katex.min.css
+
+copyright: |
+  &copy; 2025 <a href="https://github.com/norbutlepcha25" target="_blank" rel="noopener">Norbu Tshering Lepcha</a>
+
+extra:
+  generator: false
+  base_url: /cSF302
+
+markdown_extensions:
+  - def_list
+  - footnotes
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      preserve_tabs: true
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+  - admonition
+  - pymdownx.details
+  - abbr
+  - attr_list
+  - md_in_html
+  - pymdownx.blocks.caption
+  - pymdownx.tilde
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.tabbed:
+      alternate_style: true
+
+extra_javascript:
+  - javascripts/katex.js
+  - https://unpkg.com/katex@0/dist/katex.min.js
+  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
+
+plugins:
+  - search
+  - glightbox
+  - macros:
+      module_name: main
+      include_dir: macros
+      include_yaml:
+        - macros/vars.yml
+        - macros/glossary.yml
+        - macros/learning_outcomes.yml
+
+  - minify:
+      minify_html: true
+
+nav:
+  - Home: index.md
+
+  - Unit 1:
+      - Objective: unit1/objective.md
+      - 1.1 Introduction: unit1/topic1.md
+      - 1.2 Linear Data Structures: unit1/topic2.md
+
+      - Summary: unit1/summary.md
