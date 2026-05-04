@@ -108,4 +108,12 @@ nav:
       - 1.1 Introduction: unit1/topic1.md
       - 1.2 Linear Data Structures: unit1/topic2.md
 
-      - Summary: unit1/summary.md
+  - Unit 2:
+      - Objective: unit2/objective.md
+      - 2.1 Introduction: unit2/topic1.md
+      - 2.2 Linear Data Structures: unit2/topic2.md
+
+  - Unit 3:
+      - Objective: unit3/objective.md
+      - 3.1 Introduction: unit3/topic1.md
+      - 3.2 Linear Data Structures: unit3/topic2.md
